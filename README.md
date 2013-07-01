@@ -12,15 +12,15 @@
 
 ### Install Step
 1. Follow this link to install JSAPI (http://cmusphinx.sourceforge.net/sphinx4/doc/jsapi_setup.html)
-2. Extract hub4opensrc.cd_continuous_8gau.zip(Hub4 acoustic) and Copy the extracted folder to $SPHINX_INSTALL_DIRECTORY/models/acustic/ directory 
-3. Extract HUB4_trigram_lm.zip(language model) and copy language_model.arpaformat.DMP to $SPHINX_INSTALL_DIRECTORY/models/language/ directory.
-4. Create folder $SPHINX_INSTALL_DIRECTORY/models/dictionary/ and copy cmudict.0.7a_SPHINX_40 to this folder
-5. Download config.xml from current repo and copy to $SPHINX_INSTALL_DIRECTORY/src/apps/edu/cmu/sphinx/demo/transcriber/config.xml
-6. Download Transcriber.java from current repo and copy to src/apps/edu/cmu/sphinx/demo/transcriber/Transcriber.java (override)
-7. From $SPHINX_INSTALL_DIRECTORY directory running "ant" in shell
+2. Extract **hub4opensrc.cd_continuous_8gau.zip**(Hub4 acoustic) and Copy the extracted folder to **$SPHINX_INSTALL_DIRECTORY/models/acustic/** directory 
+3. Extract **HUB4_trigram_lm.zip**(language model) and copy **language_model.arpaformat.DMP** to **$SPHINX_INSTALL_DIRECTORY/models/language/** directory.
+4. Create folder **$SPHINX_INSTALL_DIRECTORY/models/dictionary/** and copy **cmudict.0.7a_SPHINX_40** to this folder
+5. Download **config.xml** from current repo and copy to **$SPHINX_INSTALL_DIRECTORY/src/apps/edu/cmu/sphinx/demo/transcriber/config.xml**
+6. Download **Transcriber.java** from current repo and copy to **src/apps/edu/cmu/sphinx/demo/transcriber/Transcriber.java** (override)
+7. From **$SPHINX_INSTALL_DIRECTORY**directory running **"ant"** in shell
 
 ### Test
-From $SPHINX_INSTALL_DIRECTORY directory run below command, the text will be populated to the shell
-java -mx800m -jar bin/Transcriber.jar file.wav
+From **$SPHINX_INSTALL_DIRECTORY** directory run below command, the text will be populated to the shell
+**java -mx800m -jar bin/Transcriber.jar file.wav**
 
 
