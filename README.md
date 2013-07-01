@@ -22,6 +22,7 @@
 ### Test
 From **$SPHINX_INSTALL_DIRECTORY** directory run below command, the text will be populated to the shell
 **java -mx800m -jar bin/Transcriber.jar file.wav**
+
 _**The audio .wav file should be 16khz, 16-bit, 1 channel, little-endian signed integer (lpcm)**_
 
 
