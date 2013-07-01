@@ -50,10 +50,13 @@ public class Transcriber {
         // Loop until last utterance in the audio file has been decoded, in which case the recognizer will return null.
         Result result;
         StringBuffer sbSpeech = new StringBuffer();
+        long beforeRun = System.currentTimeMillis();
         while ((result = recognizer.recognize())!= null) {
             String resultText = result.getBestResultNoFiller();
             sbSpeech.append(resultText + ". ");
         }
+        double timeDiff = (System.currentTimeMillis() - beforeRun)/1000.0;
         System.out.println(sbSpeech.toString());
+        System.out.println("Takes "+timeDiff + " seconds");
     }
 }
