@@ -128,9 +128,8 @@
     <!-- ******************************************************** -->
             
     <component name="largeNGramModel" type="edu.cmu.sphinx.linguist.language.ngram.large.LargeNGramModel">
-        <!--change to absolute path-->
         <property name="location" 
-             value="file:./models/language/language_model.arpaformat.DMP"/>
+             value="file:/Users/jbao009/Desktop/SpeechRecog/CMUSphinx4Src/sphinx4-1.0beta6/models/language/language_model.arpaformat.DMP"/>
              
         <property name="logMath" value="logMath"/>
         <property name="dictionary" value="dictionary"/>
@@ -171,12 +170,11 @@
     <!-- ******************************************************** -->
     <component name="dictionary" 
         type="edu.cmu.sphinx.linguist.dictionary.FastDictionary">
-        <!--change to absolute path-->
         <property name="dictionaryPath"
-                  value="file:./models/dictionary/cmudict.0.7a_SPHINX_40"/>
-        <!--change to absolute path-->
+                  value="file:/Users/jbao009/Desktop/SpeechRecog/CMUSphinx4Src/sphinx4-1.0beta6/models/dictionary/cmudict.0.7a_SPHINX_40"/>
         <property name="fillerPath" 
-	          value="file:./bld/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict/>
+	          value="file:/Users/jbao009/Desktop/SpeechRecog/CMUSphinx4Src/sphinx4-1.0beta6/bld/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict"/>
+        <property name="addSilEndingPronunciation" value="false"/>
         <property name="wordReplacement" value="&lt;sil&gt;"/>
         <property name="unitManager" value="unitManager"/>
     </component>
@@ -194,8 +192,7 @@
     <component name="wsjLoader" type="edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader">
         <property name="logMath" value="logMath"/>
         <property name="unitManager" value="unitManager"/>
-        <!--change to absolute path-->
-        <property name="location" value="file:./models/acoustic/hub4opensrc.cd_continuous_8gau"/>
+        <property name="location" value="file:/Users/jbao009/Desktop/SpeechRecog/CMUSphinx4Src/sphinx4-1.0beta6/models/acoustic/hub4opensrc.cd_continuous_8gau"/>
          <property name="dataLocation" value=""/>
     </component>
     
@@ -322,18 +319,3 @@
     </component>
     
 </config>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

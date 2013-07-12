@@ -25,4 +25,8 @@ From **$SPHINX_INSTALL_DIRECTORY** directory run below command, the text will be
 
 _**The audio .wav file should be 16khz, 16-bit, 1 channel, little-endian signed integer (lpcm)**_
 
-
+### Integrate with Soprano Job (Ruby)
+1. Modify the config.xml to replace all the relative file path with absolut path, please refer to config_local_for_job_sample.xml as a example
+2. Copy the edited config.xml to **$SPHINX_INSTALL_DIRECTORY/src/apps/edu/cmu/sphinx/demo/transcriber/config.xml**
+3. Run **ant** in terminal to re-build the entire application
+4. Open soprano/api/jobs/cmusphinx4_job.rb, add your local CMUSphinx4 path: **$SPHINX_INSTALL_DIRECTORY** to the variable **CMU_SERVER_LOCAL**
