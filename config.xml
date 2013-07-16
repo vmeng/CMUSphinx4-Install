@@ -176,7 +176,7 @@
                   value="file:./models/dictionary/cmudict.0.7a_SPHINX_40"/>
         <!--change to absolute path-->
         <property name="fillerPath" 
-	          value="file:./bld/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict/>
+	          value="file:./bld/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz/noisedict" />
         <property name="wordReplacement" value="&lt;sil&gt;"/>
         <property name="unitManager" value="unitManager"/>
     </component>
